@@ -1,2 +1,27 @@
-# Express-CRUD
-基于express框架的增删改查学生管理系统
+### 学生管理系统CRUD
+
+- 处理模板
+- 配置开放静态资源
+- 配置模板引擎
+- 简单路由：/students渲染静态页面出来
+- 路由设计
+- 提取路由模块
+- 由于接下来一系列的业务都需要处理文件数据，所以我们需要封装student.js
+- 先写好students.js文件结构
+  - 查询所有学生列表的 API find
+  - findById
+  - save
+  - updateById
+  - deleteById
+- 实现具体功能
+  - 通过路由收到请求
+  - 接收请求中的数据（get、post）
+    - req.query
+    - req.body
+  - 调用数据操作API处理数据
+  - 根据操作结果给客户端发送响应
+- 业务功能顺序
+  - 列表
+  - 添加
+  - 编辑
+  - 删除
